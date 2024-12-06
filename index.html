@@ -200,7 +200,7 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="welcome-text">歡迎蒞臨新城及妤如的喜宴</div>
+            <div class="welcome-text">歡迎蒞臨 新城及妤如的喜宴</div>
             
             <div class="search-form">
                 <input 
@@ -247,7 +247,7 @@
                     <div class="info-label">麻煩將下列編號提供給禮金組</div>
                     <div class="guest-id">#{{ selectedGuest.id }}</div>
                 </div>
-                <div v-if="selectedGuest.needCake" class="info-item"></div>
+                <div v-if="selectedGuest.needCake" class="info-item">
                     <div class="info-value">親愛的～ 記得來拿喜餅唷！</div>
                     <div class="info-value">喜餅編號：<span class="guest-id-only">#{{ selectedGuest.id }}</span></div>
                 </div>
