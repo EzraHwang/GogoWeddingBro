@@ -116,7 +116,8 @@
         }
 
         .guest-id {
-            position: absolute;
+            text-align: center;
+            position: sticky;
             bottom: 16px;
             right: 16px;
             background: #f8f5f1;
@@ -125,7 +126,7 @@
             font-size: 16px;
             color: #594d44;
             border: 1px solid #e8e1d9;
-            font-weight: 500;
+            font-weight: 1000;
         }
 
         .guest-title {
@@ -242,7 +243,10 @@
                     <div class="info-value">親愛的！記得晚宴結束後來出口處領取喜餅唷！</div>
                     <div class="info-value">喜餅編號：#{{ selectedGuest.id }}</div>
                 </div>
-                <div class="guest-id">#{{ selectedGuest.id }}</div>
+                <div class="info-item">
+                    <div class="info-label">麻煩將下列編號提供給禮金組</div>
+                    <div class="guest-id">#{{ selectedGuest.id }}</div>
+                </div>
             </div>
 
             <!-- 無結果 -->
