@@ -131,6 +131,10 @@
             font-weight: 1000;
         }
 
+        .guest-id-only {
+            font-weight: 1000;
+        }
+
         .guest-title {
             text-align: center;
             margin-bottom: 28px;
@@ -196,7 +200,7 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="welcome-text">歡迎蒞臨 新城及妤如的喜宴！</div>
+            <div class="welcome-text">歡迎蒞臨新城及妤如的喜宴</div>
             
             <div class="search-form">
                 <input 
@@ -230,8 +234,9 @@
             <div v-if="selectedGuest" class="guest-info">
                 <div class="guest-title">
                     <div class="guest-greeting">親愛的 {{ selectedGuest.name }}，歡迎您大駕光臨！</div>
-                    <div class="guest-welcome">好開心您來了！！！</div>
+                    <div class="guest-welcome">好開心您來了～</div>
                     <div class="guest-welcome">期待您享受這次的聚集！</div>
+                    <div class="guest-welcome">PS, 請一定要來找我們拍照唷！</div>
                 </div>
                 <div class="info-item">
                     <div class="info-label">桌次編號</div>
@@ -247,7 +252,7 @@
                 </div>
                 <div v-if="selectedGuest.needCake" class="info-item"></div>
                     <div class="info-value">親愛的～ 記得來拿喜餅唷！</div>
-                    <div class="info-value">喜餅編號：#{{ selectedGuest.id }}</div>
+                    <div class="info-value">喜餅編號：<span class="guest-id-only">#{{ selectedGuest.id }}</span></div>
                 </div>
             </div>
 
