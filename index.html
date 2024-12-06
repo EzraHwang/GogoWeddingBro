@@ -241,13 +241,13 @@
                     <div class="info-label">桌次名稱</div>
                     <div class="info-value">{{ selectedGuest.tableAlias }}</div>
                 </div>
-                <div v-if="selectedGuest.needCake" class="info-item">
-                    <div class="info-value">親愛的！記得晚宴結束後來出口處領取喜餅唷！</div>
-                    <div class="info-value">喜餅編號：#{{ selectedGuest.id }}</div>
-                </div>
                 <div class="info-item">
                     <div class="info-label">麻煩將下列編號提供給禮金組</div>
                     <div class="guest-id">#{{ selectedGuest.id }}</div>
+                </div>
+                <div v-if="selectedGuest.needCake" class="info-item"></div>
+                    <div class="info-value">親愛的～ 記得來拿喜餅唷！</div>
+                    <div class="info-value">喜餅編號：#{{ selectedGuest.id }}</div>
                 </div>
             </div>
 
